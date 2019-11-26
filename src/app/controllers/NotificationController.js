@@ -26,6 +26,7 @@ class NotificationController {
     const notification = await Notification.findByIdAndUpdate(
       req.params.id,
       { read: true },
+      //depois de atualizar retorna a notificaçnao atualizada
       { new: true }
     );
 
